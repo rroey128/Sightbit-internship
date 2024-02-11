@@ -1,9 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-const express = require('express');
-const { readData } = require('../MockData.js');
-const { updateJSONFile } = require('../MockData.js');
-const DB = require('../DB.js').DB;
+
+import express from 'express';
+const app = express();
+import { DB } from '../DB.mjs';
 const db = new DB('SightBitDB');
 
 
@@ -77,6 +75,6 @@ process.on('exit', () => {
     db.close();
 });
 
+export default router;
 
-
-module.exports = router;
+// module.exports = router;

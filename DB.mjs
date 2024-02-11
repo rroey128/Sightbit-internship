@@ -1,8 +1,10 @@
-const prop = require('./Properties.js');
-const { MongoClient } = require('mongodb');
-const connectionString = prop.connectionString;
 
-class DB{
+import { MongoClient } from 'mongodb';
+import dotenv from 'dotenv';
+dotenv.config();
+const connectionString = process.env.CONNECTION_STRING;
+
+export class DB{
 
 #client;
 #dbName;
@@ -116,4 +118,4 @@ async validateData(collectionName, bodyJSON) {
 
 }
 
-module.exports = { DB };
+// module.exports = { DB };
