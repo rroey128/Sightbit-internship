@@ -1,1 +1,1 @@
-# Sightbit-internship
+# SightBit-fullstack-internship

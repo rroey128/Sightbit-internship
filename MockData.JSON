@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Charles Clore Beach",
+    "location": [
+      32.0625,
+      34.7642
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bondi Beach",
+    "location": [
+      -33.891,
+      151.2767
+    ]
+  }
+]
